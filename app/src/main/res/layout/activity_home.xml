@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/FFDAD4D4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="Home Page"
+        app:titleMargin="10dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/newbookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="@+id/toolbar"
+        android:layout_margin="25dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/new_booking"
+        android:background="@drawable/button_design_grey"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/viewbookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newbookings"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/newbookings"
+        app:layout_constraintRight_toRightOf="@+id/newbookings"
+        android:layout_margin="25dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/view_bookings"
+        android:background="@drawable/button_design_grey"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/viewbookings"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/viewbookings"
+        app:layout_constraintRight_toRightOf="@+id/viewbookings"
+        android:layout_margin="25dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/logout"
+        android:background="@drawable/button_design_grey"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

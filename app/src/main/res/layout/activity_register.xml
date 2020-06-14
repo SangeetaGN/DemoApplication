@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/FFDAD4D4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="@string/actionbar_title2"
+        app:titleMargin="10dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="20dp"
+        android:hint="@string/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="20dp"
+        android:hint="@string/password"
+        app:layout_constraintTop_toBottomOf="@+id/username"/>
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/password"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/register"
+        android:background="@drawable/button_design"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/back"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/signup"
+        app:layout_constraintLeft_toLeftOf="@+id/signup"
+        app:layout_constraintRight_toRightOf="@+id/signup"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

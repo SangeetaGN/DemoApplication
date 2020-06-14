@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <string name="actionbar_title">Login  Page</string>
+    <string name="actionbar_title2">Registration  Page</string>
+    <string name="actionbar_title4">New Bookings</string>
+
+    <string name="login">Login</string>
+    <string name="register">Sign Up</string>
+    <string name="back"> &lt;&lt; Go Back</string>
+
+    <string name="newuser_register">New User? Register </string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="car_reg_number">Reg. Number(Ex: KA-01-HH-1234)</string>
+    <string name="car_colour">Car Colour:</string>
+    <string name="submit">Submit</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="parking_slot">Parking Slots</string>
+    <string name="total_slots_10">Total Slots : 10</string>
+    <string name="logout">Logout</string>
+    <string name="view_bookings">View Bookings</string>
+    <string name="new_booking">New Booking</string>
+
+</resources>
